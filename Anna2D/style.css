@@ -1,4 +1,26 @@
-body
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+:root {
+  --dark-bg: #000000;
+  --darker-bg: #050505;
+  --accent: #ffffff;
+  --accent-glow: rgba(46, 204, 113, 0.4);
+  --text: #ffffff;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
 /* Navigation */
 .navbar {
     position: fixed;
@@ -52,34 +74,13 @@ body
     width: 100%;
   }
   
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  :root {
-    --dark-bg: #ffffff;
-    --darker-bg: #050505;
-    --accent: #ffffff;
-    --accent-glow: rgba(46, 204, 113, 0.4);
-    --text: #000000;
-  }
-  
-  body {
-    background-color: var(--dark-bg);
-    color: var(--text);
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
 
   .hero{
     min-height: 100vh; /*  
     display: flex; */
     align-items: center;
     padding: 12% 5%;
-    background: radial-gradiend(circle at 75% 30%);
+    background: radial-gradiend(circle at 75% 30%)
     var (--Acent-Glow)0% , transparent 30%;
 
 }
