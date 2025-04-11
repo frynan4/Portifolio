@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +8,9 @@
 :root {
   --dark-bg: #000000;
   --darker-bg: #050505;
-  --accent: #ffffff;
-  --accent-glow: rgba(46, 204, 113, 0.4);
-  --text: #ffffff;
+  --accent: #000000;
+  --accent-glow: rgba(0, 0, 0, 0.4);
+  --text: #000000;
 }
 
 body {
@@ -19,6 +18,22 @@ body {
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+img {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+}
+
+body {
+  background: url('download.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
 }
 
 /* Navigation */
@@ -30,7 +45,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(250, 185, 223, 0.95);
+    background: rgba(155, 151, 151, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
